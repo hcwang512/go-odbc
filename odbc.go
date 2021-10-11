@@ -7,8 +7,7 @@ package odbc
 /*
 #cgo darwin LDFLAGS: -lodbc
 #cgo freebsd LDFLAGS: -lodbc
-#cgo linux LDFLAGS: -L${SRCDIR}/clibs/libs -lodbc
-#cgo linux LDFLAGS: -L${SRCDIR}/clibs/libs -lodbcinst
+#cgo linux LDFLAGS: -L${SRCDIR}/clibs/libs -lodbc -lodbcinst -lltdl -ldl
 #cgo linux CFLAGS: -I${SRCDIR}/clibs/include 
 #cgo windows LDFLAGS: -lodbc32
 
